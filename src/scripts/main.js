@@ -18,10 +18,10 @@ function sortList(li) {
 
 function getEmployees(lis) {
   return Array.from(lis.querySelectorAll('li')).map((li) => ({
-    name: lis.textContent,
-    salary: getSalary(lis),
-    position: lis.dataset.position,
-    age: Number(lis.dataset.age),
+    name: li.textContent,
+    salary: getSalary(li),
+    position: li.dataset.position,
+    age: Number(li.dataset.age),
   }));
 }
 
